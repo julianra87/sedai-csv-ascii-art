@@ -48,13 +48,16 @@
 
 ##  Usage
 
-The application can be used with two types of CSV files:
+Upon initial runs of the solution, I found that there were some entries with latitude and longitude outside of known ranges for UK locations, here is one entry as an example:
+`1538687,BN91 9AA,99.999999000000000,0.000000000000000`
 
-1. **Original CSV File**: This file contains tuples of latitude and longitude corresponding to UK postal zip codes. It may include some entries with placeholder coordinates (latitude `99.999999000000000` and longitude `0.000000000000000`), which are not valid and may distort the ASCII art output.
+Based on those findings, I decided to add an additional case handling for the application to process 2 difference CSV files:
+
+1. **Original CSV File**: This file contains tuples of latitude and longitude corresponding to UK postal zip codes. It may include some entries with placeholder coordinates (latitude `99.999999000000000` and longitude `0.000000000000000`), which are outside of known ranges for UK locations and may distort the ASCII art output, but adhere to the requested solution.
 
 2. **Cleaned CSV File**: For optimal results, use a cleaned version of the file where entries with invalid latitude and longitude values (as mentioned above) are removed. These invalid entries cause the rendered ASCII map to become distorted and shift out of the true geographical boundaries of the UK.
 
-We recommend preprocessing the original file to filter out these problematic entries before running the application.
+I recommend preprocessing the original file to filter out these problematic entries before running the application.
 
 To run the application with the `clean` version of the csv, you should specify the word `clean`
 as program argument.
