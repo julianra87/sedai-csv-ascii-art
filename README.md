@@ -73,7 +73,7 @@ Application output with original ukpostcodes-clean.csv file:
 
 MIT License
 
-Copyright (c) 2025 [Your Name or Organization]
+Copyright (c) 2025 JULIANRA87
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
