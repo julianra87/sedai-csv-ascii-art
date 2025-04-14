@@ -1,5 +1,5 @@
 # Sedai CSV ASCII art generator
-## This project takes inputs from a CSV file containing tuples of latitude and longitude that match the postal zip codes for the UK
+## This project takes inputs from a CSV file containing entries of id, postcode, latitude and longitude that match the postal zip codes for the UK
 
 ## Table of Contents
 - [Installation & Setup](#installation--setup)
@@ -12,7 +12,7 @@
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-org/sedai-csv-ascii-art.git
+   git clone https://github.com/julianra87/sedai-csv-ascii-art.git
    cd sedai-csv-ascii-art
    ```
 
@@ -25,7 +25,7 @@
 
    This will generate a `.jar` file in the `target/` directory.
 
-3. **Download and Run the Application**
+3. **Run the Application**
 
    If you're providing a prebuilt `.jar` file, share it as a downloadable asset. Users can download it and run it like this:
 
