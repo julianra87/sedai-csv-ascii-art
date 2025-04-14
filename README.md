@@ -27,24 +27,23 @@
 
 3. **Run the Application**
 
-   If you're providing a prebuilt `.jar` file, share it as a downloadable asset. Users can download it and run it like this:
+   After generating the `.jar` file in the steps above, users can run it like this:
 
    ```bash
    java -jar sedai-csv-ascii-art-1.0.jar
    ```
 
    Or if built locally:
+   
    ```bash
    java -jar target/sedai-csv-ascii-art-1.0.jar
    ```
 
-4. **Dependencies**
+5. **Dependencies**
 
-   Make sure to include the following in your `pom.xml`:
-    - Lombok
-    - Apache Commons Lang
-
-   See the full dependency list in the `README` above.
+   This application leverages the usage of:
+    - Apache Commons artifact `commons-csv` version 1.14.0 for csv consumption and parsing.
+    - Project Lombok artifact `Lombok` version 1.18.38 for boilerplate code generation via annotations to reduce the amount of code written and leverage built in methods and implementations.
 
 ##  Usage
 
