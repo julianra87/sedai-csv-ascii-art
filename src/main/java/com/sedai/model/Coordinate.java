@@ -8,8 +8,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Coordinate {
-    double id;
-    String postcode;
-    double latitude;
-    double longitude;
+    private double id;
+    private String postcode;
+    private double latitude;
+    private double longitude;
 }
